@@ -1,15 +1,15 @@
-%define		kdeframever	5.65
+%define		kdeframever	5.67
 %define		qtver		5.9.0
 %define		kfname		kjsembed
 #
 Summary:	Binding Javascript object to QObjects
 Name:		kf5-%{kfname}
-Version:	5.65.0
-Release:	2
+Version:	5.67.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	121acbef6bc794119d1510b04e1b7b44
+# Source0-md5:	10163d7d799db8cc90afcb7f2acb89d8
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5Gui-devel >= 5.3.1
