@@ -1,15 +1,15 @@
-%define		kdeframever	5.67
+%define		kdeframever	5.79
 %define		qtver		5.9.0
 %define		kfname		kjsembed
 #
 Summary:	Binding Javascript object to QObjects
 Name:		kf5-%{kfname}
-Version:	5.67.0
+Version:	5.79.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	10163d7d799db8cc90afcb7f2acb89d8
+# Source0-md5:	861bff4ffdfa60fea90776817f959d51
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5Gui-devel >= 5.3.1
@@ -79,16 +79,17 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libKF5JsEmbed.so.5
 %attr(755,root,root) %{_libdir}/libKF5JsEmbed.so.*.*.*
 %{_mandir}/man1/kjscmd5.1*
-%lang(ca) /usr/share/man/ca/man1/kjscmd5.1*
-%lang(de) /usr/share/man/de/man1/kjscmd5.1*
-%lang(es) /usr/share/man/es/man1/kjscmd5.1*
-%lang(it) /usr/share/man/it/man1/kjscmd5.1*
-%lang(nl) /usr/share/man/nl/man1/kjscmd5.1*
-%lang(pt) /usr/share/man/pt/man1/kjscmd5.1*
-%lang(pt_BR) /usr/share/man/pt_BR/man1/kjscmd5.1*
-%lang(ru) /usr/share/man/ru/man1/kjscmd5.1*
-%lang(sv) /usr/share/man/sv/man1/kjscmd5.1*
-%lang(uk) /usr/share/man/uk/man1/kjscmd5.1*
+%lang(ca) %{_mandir}/ca/man1/kjscmd5.1*
+%lang(de) %{_mandir}/de/man1/kjscmd5.1*
+%lang(es) %{_mandir}/es/man1/kjscmd5.1*
+%lang(it) %{_mandir}/it/man1/kjscmd5.1*
+%lang(nl) %{_mandir}/nl/man1/kjscmd5.1*
+%lang(pt) %{_mandir}/pt/man1/kjscmd5.1*
+%lang(pt_BR) %{_mandir}/pt_BR/man1/kjscmd5.1*
+%lang(ru) %{_mandir}/ru/man1/kjscmd5.1*
+%lang(sv) %{_mandir}/sv/man1/kjscmd5.1*
+%lang(uk) %{_mandir}/uk/man1/kjscmd5.1*
+%lang(fr) %{_mandir}/fr/man1/kjscmd5.1*
 
 %files devel
 %defattr(644,root,root,755)
