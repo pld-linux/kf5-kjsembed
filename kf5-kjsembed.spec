@@ -1,15 +1,15 @@
-%define		kdeframever	5.79
+%define		kdeframever	5.80
 %define		qtver		5.9.0
 %define		kfname		kjsembed
 #
 Summary:	Binding Javascript object to QObjects
 Name:		kf5-%{kfname}
-Version:	5.79.0
+Version:	5.80.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	861bff4ffdfa60fea90776817f959d51
+# Source0-md5:	dff86680d4f74436485a72d0b02e7453
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5Gui-devel >= 5.3.1
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %attr(755,root,root) %{_bindir}/kjscmd5
 %attr(755,root,root) %{_bindir}/kjsconsole
-%attr(755,root,root) %ghost %{_libdir}/libKF5JsEmbed.so.5
+%ghost %{_libdir}/libKF5JsEmbed.so.5
 %attr(755,root,root) %{_libdir}/libKF5JsEmbed.so.*.*.*
 %{_mandir}/man1/kjscmd5.1*
 %lang(ca) %{_mandir}/ca/man1/kjscmd5.1*
@@ -95,5 +95,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_includedir}/KF5/KJsEmbed
 %{_libdir}/cmake/KF5JsEmbed
-%attr(755,root,root) %{_libdir}/libKF5JsEmbed.so
+%{_libdir}/libKF5JsEmbed.so
 %{qt5dir}/mkspecs/modules/qt_KJsEmbed.pri
